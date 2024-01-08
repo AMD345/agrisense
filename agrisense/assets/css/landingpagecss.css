@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+
+  #firstDiv {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  #videoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  #topNav {
+      justify-content: space-between;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    display: flex;
+    margin-right: 50px;
+  }
+
+  #topNav ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 0 20px;
+      position: relative;
+  }  
+  #topNav ul li a{
+      text-decoration: none;
+      color: #242524;
+      text-transform: uppercase;
+  }
+  #topNav ul li::after{
+      content: '';
+      height: 3px;
+      width: 0;
+      background: #489A2B;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: 0.5s;
+  }
+  #topNav ul li:hover::after{
+      width: 100%;
+  }
+
+  #titleDesc {
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+    color: #fff;
+  }
+  #titleDesc h1 {
+      font-size: 100px;
+      background: linear-gradient(90deg, #124201, #DFF40F);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 0.5px white;
+      text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
+    }
+  #titleDesc p{
+      width: 80%;
+      font-size: 21px;
+      color: #2e302d;
+      -webkit-text-stroke: 0.2px black;
+  }
+
+  #FAQs {
+      margin-right: 20px;
+      font-size: 18px; 
+      padding: 10px 20px; 
+      background-color: rgba(76, 175, 80, 0.2); 
+      color: #fff; 
+      border: 1.5px solid #fff; 
+      border-radius: 2px; 
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+      #FAQs:hover {
+      background-color: rgba(69, 160, 73, 0.7); 
+      }
+
+
+  #Enter{
+      font-size: 18px;
+      padding: 10px 20px; 
+      background-color: rgba(76, 175, 80, 0.2); 
+      color: #fff; 
+      border: 1.5px solid #fff;
+      border-radius: 2px; 
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  #Enter:hover {
+      background-color: rgba(69, 160, 73, 0.7); 
+      }
+
